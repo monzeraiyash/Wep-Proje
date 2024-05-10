@@ -5,12 +5,12 @@
     margin: 0;
 }
 body {
-    background: url(../img/Medina1.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Medina1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
 }
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -157,8 +157,6 @@ img {
   cursor: pointer;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For medium devices */
 @media screen and (min-width: 576px) {
   .login {
     justify-content: center;
@@ -170,4 +168,89 @@ img {
   .login__title {
     margin-bottom: 2rem;
   }
+}
+nav {
+  width: 85%; 
+  margin: 0 auto; 
+}
+.navbar {
+  background-color: rgba(151, 212, 212, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0; 
+  border-radius: 10px;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
+}
+.navbar-nav {
+  justify-content: flex-start;
+}
+.navbar-brand {
+  color: rgb(159, 36, 36);
+}
+.nav-item {
+  list-style: none;
+}
+.nav-item:hover {
+  background-color: rgba(35, 185, 175, 0.121);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav-link {
+  background-color: rgb(55, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: white;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.nav-item a {
+  color: rgb(159, 36, 36);
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.navbar-toggler {
+  background-color: rgb(159, 36, 36);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  margin-right: 1em;
+  transition: 0.5s;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+.navbar-toggler-icon {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.navbar-toggler-icon:hover {
+ color: rgba(62, 162, 173, 0.495);
 }

@@ -6,7 +6,7 @@
     font-family: sans-serif;
 }
 #anasayfa1 {
-    background-color: rgba(6, 96, 129, 0.3); 
+    background-color: rgba(6, 96, 129, 0.3)
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     height: 100vh;
 }
 nav {
-    width: 85%; 
+    width: 87%; 
     margin: 0 auto; 
 }
 .navbar {
@@ -64,7 +64,7 @@ nav {
 }
 .nav-item a {
     color: rgb(159, 36, 36);
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -102,7 +102,7 @@ nav {
 .navbar-toggler-icon:hover {
    color: rgba(62, 162, 173, 0.495);
 }
-.center1 {
+.center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -111,9 +111,10 @@ nav {
     user-select: none; 
     text-align: center;
     color: white;
+    margin-top: -20px;
 
 }
-.center1 h1 {
+.center h1 {
     font-size: 50px;
     color: white;
     font-weight: bold;
@@ -121,7 +122,35 @@ nav {
     margin-top: 10px;
     text-align: center;
 }
-.center1 .buttons {
+.center .buttons {
+    margin: 35px 290px;
+}
+.center-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none; 
+    text-align: center;
+    color: white;
+    margin-top: -20px;
+    display: block;
+
+}
+.film-img img {
+    height: 70%;
+    width: 70%;
+}
+.center-2 h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
+.center-2 .buttons {
     margin: 35px 290px;
 }
 .buttons button {
@@ -149,8 +178,9 @@ button:hover {
     transform: translateY(-7px);
 }
 .img-fluid {
+    max-width: 50%;
+    height: auto;
     padding-top: 5%;
-    width: 100%;
     padding-left: 4%;
     padding-right: 4%;
 }
@@ -190,40 +220,74 @@ button:hover {
     padding-right: 4%;
 }
 .container .row .col-md-6 .card .card-body {
-    margin-top: 50%; /* Adjust this value to your liking */
+    margin-top: 50%; 
+}
+.movies img {
+    max-width: 100px;
+    height: auto; 
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .card {
-    border-radius: 1px;
-    box-shadow: 0 35px 35px rgba(0, 0, 0, 1);
-    padding: 1%;
-    margin-top: 0; 
+    background-color: rgba(202, 164, 164, 0.715);
+    border-radius: 2.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 .card-body {
-    background-color: rgb(41, 184, 134);
-    border-radius: 1px;
-    box-shadow: 0 35px 35px rgba(0, 0, 0, 1);
-    padding: 1%;
-    margin-top: 20%;
-}
-.card-title {
-    padding: 2%;
+    padding: 1rem;
+    border-radius: 3.25rem;
+    background: #ffffff;
+    position: relative;
+    bottom: 2rem;
+    font-family: 'Budokan Rounded', sans-serif;
+    font-size: 1.10rem;
     text-align: center;
+    transition: 1s;
+}
+
+.card-title {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    margin-bottom: .5rem;
 }
 .card-text {
-    text-align: justify;
+    font-family: 'Raleway', sans-serif;
 }
-.card-img-top {
-    border-radius: 10px;
-    margin-top: 0; /* Adjust this value to your liking */
-    margin-bottom: 10px;
+
+.card-img-container{
     display: block;
-    width: 100%;
-    object-fit: cover; /* This will ensure the image covers the full width/height of the .card */
+    margin: auto;
+    position: relative;
+   
+    
 }
+.card-img-container-1{
+    display: block;
+    margin: auto;
+    position: relative;
+    padding-top: 50vw;
+    z-index: -10;
+}
+
 #col-ia {
-    padding: 1%;
+    padding: 6%;
     width: 45%;
-    margin-left: 3%;
+    margin-left: 3.2%;
+    display: flex;
+}
+@media(max-width:1000px) {
+    .container_cv {
+        margin: 0px;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 .container_cv {
     position: relative;
@@ -234,10 +298,11 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 35px rgba(0, 0, 0, 1);
+    margin-top: 45vw;
 }
 .container_cv .left_Side {
     position: relative;
-    background-color: #003147;
+    background-color: #76821f;
     padding: 40px;
 }
 
@@ -440,4 +505,53 @@ button:hover {
     background-color: rgb(0, 0, 0);
     background: url(../img/1.jpg) no-repeat center center fixed; 
 
+}
+.carousel-item img {
+    max-height: 550px;
+    width: 100%;
+    object-fit: cover;
+
+}
+#iletisimdonusbody {
+    background-color: aqua;
+}
+
+#iletisimbaslik {
+    color: white;
+}
+
+#iletisimkontrolbaslik {
+    color: rgb(24, 144, 209);
+}
+
+#basliklar {
+    color: rgb(24, 144, 209);
+}
+
+#cizgii {
+    color: rgb(24, 144, 209);
+}
+
+#iconn {
+    color: white;
+}
+
+.form-group {
+    color: white;
+}
+
+#footeryazi {
+    color: rgb(255, 255, 255);
+}
+
+
+.input-group-text {
+    display: inline-block;
+}
+
+.Link {
+    display: inline-block;
+}
+.searchBox {
+    margin-left: 3%;
 }
