@@ -44,12 +44,11 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
           </li>
         </ul>
       </div>
-      </div>
   </div>
-  </nav>
+</nav>
 <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col" id="col-ia">
-      <div class="card" id="card-ia">
+      <div class="card-body" id="card-ia">
           <img src="img/matcar.png" class="card-img-top" alt="...">
           <div class="card-body" id="cardbody-ia">
               <h4 class="card-title">ÇEVRİMİÇİ MAĞAZA</h4>
@@ -60,7 +59,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
       </div>
   </div>
   <div class="col" id="col-ia">
-      <div class="card" id="card-ia">
+      <div class="card-body" id="card-ia">
           <img src="img/hardware.jpg" class="card-img-top" alt="...">
           <div class="card-body" id="cardbody-ia">
               <h4 class="card-title">DONANİM BİLGİSİ</h4>
@@ -71,7 +70,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
       </div>
   </div>
   <div class="col" id="col-ia">
-      <div class="card" id="card-ia">
+      <div class="card-body" id="card-ia">
           <img src="img/technology.jpg" class="card-img-top" alt="...">
           <div class="card-body" id="cardbody-ia">
               <h4 class="card-title">Yeni Teknoloji</h4>
@@ -86,32 +85,33 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
       </div>
   </div>
   <div class="col" id="col-ia">
-      <div class="card" id="card-ia">
-          <div class="card-body" id="cardbody-ia">
-              <h5 class="card-title">POKEMON</h5>
-              <p class="card-text">
-                  Pokemon karakterlerini çok seviyorum. Hatta evimde bir kaç tane pokemon oyuncağı bile var bu
-                  yüzden
-                  bu kısımda size bir kaç pokemon karakteri göstermek istedim. Örnek olarak
-                  Pikachu, Ditto, Squirtle
-                  gibi bir çok pokemon ismini yazarak resmini görüntüleyebilirsiniz.
-              </p>
-          </div>
-          <main>
-              <div class="searchBox">
-                  <input id="pokemonName" type="Pokemon name" placeholder="Pokemon ismi" />
-                  <button id="search">🔎</button>
-              </div>
-
-              <div class="pokemonBox"></div>
-          </main>
-
-      </div>
-  </div>
+    <div class="card-body" id="card-ia">
+        <div class="movieContainer"></div>
+        <div class="card-body" id="cardbody-ia">
+            <h5 class="card-title">Movies</h5>
+            <section class="container ">
+                <div class="row bg-color text-light  ">
+                    <div class="col mx-auto" style="color: red;">
+                      <p class="card-text">
+                        Tatil günlerinde film veya diziler izlemenin en iyi şey olduğunu düşünüyorum ve size son zamanlarda izlediğim film veya dizi isimlerini önerebilirim:
+                      </p>
+                      <ol style="color: blue;">
+                        <li>La casa de papel</li>
+                        <li>Breaking</li>
+                        <li>Dark</li>
+                        <li>Squid Game</li>
+                        <li>Lupin</li>
+                        <li>Stranger</li>
+                    </ol>
+                        <input type="text" id="searchBox" placeholder="Enter movie name">
+                        <button id="searchButton">Search</button>
+                        <ul class="movies"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>
