@@ -41,18 +41,12 @@ function getMovie(e) {
   e.preventDefault();
 }
 
+function check() {
+  var operation = document.querySelector('input[name="operation"]:checked');
+  var gender = document.querySelector('input[name="gender"]:checked');
+  var message = document.querySelector('textarea[name="message"]');
 
-function required()
-{
-    var ad = document.getElementById("ad");
-    var email = document.getElementById("email");
-    var form1 = document.getElementById("form1");
-
-    if ( ad.value =="" ||  email.value=="" || ad.value == null ||  email.value== null) {
-        alert("Boş Olmamalı!!");
-    }
-    else
-    {
-        form1.action ="iletisimbilgi.php"; 
-    }
+  if (operation) operation.checked = false;
+  if (gender) gender.checked = false;
+  if (message) message.value = '';
 }

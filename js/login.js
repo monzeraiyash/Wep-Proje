@@ -1,22 +1,12 @@
-function Giris() {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var ture = false;
-    var alert1 = document.getElementById("text");
-    if (email == "B231210571@sakarya.edu.tr" & password == "b231210571") {
-        
-        ture = true;
-        document.getElementById("center-1").style.display="none";
-        alert("Hoşgeldin B231210571 ")
-        document.getElementById("form").submit;
-    } else {
-        alert1.innerHTML = "Başarsız"
+function validateform() {
+    var name = document.myform.name.value;
+    var password = document.myform.password.value;
 
+    if (name == null || name == "") {
+        alert("Email alanı dolu olmalı");
+        return false;
+    } else if (password.length < 6) {
+        alert("Parola en az 6 haneli olmalı.");
+        return false;
     }
-    if (ture == true) {
-        location.href = 'index.html';
-    }
-
-
-
-}
+}  

@@ -51,7 +51,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
         <div class="col align-self-center bg-color" style="height: 500px;">
             <div class="text-light text-center align-item-center mt-5">
       <div class="login">
-         <form action="City.php" method="get" id="form" class="login__form">
+         <form action="./PHP/login.php" method="get" id="form" class="login__form">
             <h1 class="login__title">Login</h1>
             <div class="login__inputs">
                <div class="login__box">
@@ -66,12 +66,13 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                </div>
             </div>
             <p>b231210571</p>
-            <input class="btn btn btn-outline-secondary btn-lg mt-5" type="button" value="Login" onclick="Giris()">
-            <input type="submit" class="login__button">
-          <div class="alert-danger me-5 mt-3">
-              <h3 id="text"></h3>
+            <div class="form-check">
+              <label class="form-check-label">
+              </label>
+              <button type="submit" value="submit" class="btn btn-login float-right"
+                  id="Girisonaylabuton">Giriş Yap</button>
           </div>
-         </form>
+      </form>
       </div>
       <script src="./js/main.js"></script>
     </body>
