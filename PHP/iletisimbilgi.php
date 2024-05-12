@@ -12,8 +12,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/1922f4bd30.js" crossorigin="anonymous"></script>
 </head>
-<body id="anasayfa1">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">  
+<body id="anasayfa">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">MONZER AIYASH</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html"><span>AnaSayfa</span></a>
+          <a class="nav-link" href="index.html"><span>AnaSayfa/Hakkimda</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="City.html">Şehrim</a>

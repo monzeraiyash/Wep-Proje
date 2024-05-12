@@ -6,7 +6,7 @@ function validateform() {
         alert("Email alanı dolu olmalı");
         return false;
     } else if (password.length < 6) {
-        alert("Parola en az 6 haneli olmalı.");
+        alert("Parola en az 8 haneli olmalı.");
         return false;
     }
 }  

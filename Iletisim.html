@@ -12,7 +12,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/1922f4bd30.js" crossorigin="anonymous"></script>
 </head>
-<body id="anasayfa1">
+<body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">MONZER AIYASH</a>
@@ -48,13 +48,11 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
 </div>
 </nav>
 
- <!-- iletisim -->
  <section class="p-5 text-center">
   <div class="container">
       <h2 id="iletisimbaslik" class="mb-3 font-weight-bold">İletişim</h2><i class="fas fa-code" id="iconn"></i>
   </div>
 </section>
-<!-- bitis -->
 
 <main>
 
@@ -81,12 +79,6 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
               <input type="radio" name="radio" value="Sikayet">Şikayet<br>
               <input type="radio" name="radio" value="Oneri">Öneri <br>
               <input type="radio" name="radio" value="Diger">Diğer
-          </div>
-          <div class="form-group">
-              <br>
-              <label for="radio2">Cinsiyetinizi Seçiniz</label><br>
-              <input type="radio" name="radio2" value="Erkek">Erkek<br>
-              <input type="radio" name="radio2" value="Kadın">Kadın <br>
           </div>
           <br>
           <div class="form-group">
@@ -118,11 +110,11 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
       var sonpos = email.lastIndexOf(".");
 
       if (msg == null || msg == "" || msg.length < 10) {
-          alert("Mesaj boş veya 10 karakterden az olamaz");
+          alert("Mesaj boş veya 15 karakterden az olamaz");
           return false;
       }
       if (kullaniciadi == null || kullaniciadi == "" || kullaniciadi.length < 4) {
-          alert("Kullanıcı adı 4 karakterden az olamaz");
+          alert("Kullanıcı adı 5 karakterden az olamaz");
           return false;
       }
       if (ilkpos < 1 || sonpos < atpos + 2 || sonpos + 2 >= email.length) {
@@ -143,7 +135,8 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
   integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
   crossorigin="anonymous"></script>
-<script src="./bootstrap.css/js/bootstrap.js"></script>
 
+<script src="./js/main.js"></script>  
+<script src="./bootstrap.css/js/bootstrap.js"></script>
 </body>
 </html>
