@@ -326,7 +326,13 @@ button:hover {
 }
 
 .form-group {
-    color: white;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+
 }
 
 #footeryazi {
@@ -336,6 +342,10 @@ button:hover {
 
 .input-group-text {
     display: inline-block;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    padding-left: 1.4rem;
+ 
 }
 
 .Link {

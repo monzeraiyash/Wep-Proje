@@ -22,11 +22,10 @@
                 <?php if ($_POST["email"] == "B231210571@sakarya.edu.tr" && $_POST["password"] == "b231210571") {
                     echo "Hoşgeldin " . $_POST["email"];
                     echo "<br>Girişin Onaylandı.";
-                    header("refresh:4;  url=index.html");
-
                 } else {
                     echo "Kullanıcı epostası yada şifre hatalı";
-                    header("refresh:5;  url=login.html");
+                    header("refresh:10;  ./login.html");
+                    exit;
                 }
                 ?>
             </div>
