@@ -40,13 +40,3 @@ function getMovie(e) {
 
   e.preventDefault();
 }
-
-function check() {
-  var operation = document.querySelector('input[name="operation"]:checked');
-  var gender = document.querySelector('input[name="gender"]:checked');
-  var message = document.querySelector('textarea[name="message"]');
-
-  if (operation) operation.checked = false;
-  if (gender) gender.checked = false;
-  if (message) message.value = '';
-}

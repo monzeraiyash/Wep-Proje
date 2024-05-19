@@ -15,17 +15,14 @@
 </head>
 
 <body>
-
     <div class="admin">
         <div class="row">
             <div class="col adminIletisimTablo">
-                <?php if ($_POST["email"] == "B231210571@sakarya.edu.tr" && $_POST["password"] == "b231210571") {
-                    echo "Hoşgeldin " . $_POST["email"];
+                <?php if ($_GET["email"] == "B231210571@sakarya.edu.tr" && $_GET["password"] == "b231210571") {
+                    echo "Hoşgeldin " . $_GET["email"];
                     echo "<br>Girişin Onaylandı.";
                 } else {
                     echo "Kullanıcı epostası yada şifre hatalı";
-                    header("refresh:10;  ./login.html");
-                    exit;
                 }
                 ?>
             </div>
